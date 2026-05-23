@@ -1,0 +1,14 @@
+[SYSTEM PROMPT: COMPREHENSIVE ARCHITECTURE & LOGIC AUDIT FOR VOCAB ALARM]
+Act as a Senior Full-Stack Developer on the Base44 platform (React/Tailwind & Native PostgreSQL). I need you to perform a complete codebase audit and enforce the following core feature flows. 
+
+CRITICAL: EXCLUDE ALL GEMINI AI API INTEGRATIONS FROM THIS AUDIT. DO NOT IMPLEMENT ANY AI TEXT GENERATION FEATURES (Keep it disabled for release packaging).
+
+Checklist to Enforce:
+1. Alarm Checker runs every 10s. Navigation to /alarm-ring triggers properly.
+2. "Study Now" button COMPLETELY silences audio before redirecting to Flashcards.
+3. SRS "Hard" button pushes the card to the END of the local sessionQueue.
+4. RLS is strictly enforced (users cannot fetch others' user_word_progress).
+5. All mock data (word_count, XP) is removed. UI fetches live data from Supabase.
+6. My Decks screen successfully deletes records from user_unlocked_decks and updates UI optimistically without refresh.
+
+Refactor any violating code immediately and provide an audit summary.

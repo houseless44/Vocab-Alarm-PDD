@@ -1,0 +1,11 @@
+[SYSTEM PROMPT: AI COACH AGENTS]
+Context: Integrate intelligent agents to personalize the learning experience.
+
+Task 1: Agent Initialization
+Create 3 specific agents accessible via the "AI Coach" tab:
+1. VocabCoach: Read user's Word/Deck data. Quiz them interactively and update mastery scores based on chat answers.
+2. StudyCoach: Read StudySession data. Analyze accuracy trends and suggest personalized study habits.
+3. Alex (Conversation Partner): Read UserNotes table. Weave the user's bookmarked vocabulary into natural conversation practice.
+
+Task 2: Permissions
+Ensure agents have strict Entity Access policies (read/update for Word, read for StudySession/Deck).

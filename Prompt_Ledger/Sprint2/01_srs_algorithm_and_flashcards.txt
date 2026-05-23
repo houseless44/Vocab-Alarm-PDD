@@ -1,0 +1,14 @@
+[SYSTEM PROMPT: STRICT SRS FLASHCARD IMPLEMENTATION]
+Context: Implement the 3-button Spaced Repetition System (SRS) and Local Queue logic in the /study screen.
+
+Task 1: Local Queue Logic (React State)
+Manage the active vocabulary cards using a sessionQueue array. Do NOT block the UI during async database calls.
+
+Task 2: 3-Button Evaluation Algorithm
+When the user clicks a rating button, UPSERT to UserWordProgress:
+- "Khó (1 min)" Button: status='learning', mastery=30, next_review_date = CurrentTime + 60s. CRITICAL: Do not remove from active session. Push this card to the end of the sessionQueue to force re-review.
+- "Vừa (1 day)" Button: status='reviewing', mastery=60, next_review_date = CurrentTime + 24h. Remove from queue.
+- "Dễ (4 days)" Button: status='mastered', mastery=100, next_review_date = CurrentTime + 4 days. Remove from queue.
+
+Task 3: Mastery Level-Up Logic
+Track `consecutive_correct`. 1 time = 30%, 2 times = 60%, 3 times straight = 100% (Status auto-changes to 'mastered'). If marked "Khó", reset consecutive_correct to 0, subtract 40 mastery.

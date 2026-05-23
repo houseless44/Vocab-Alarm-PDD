@@ -1,0 +1,15 @@
+[SYSTEM PROMPT: 3NF RELATIONAL DATABASE SCHEMA]
+Context: We are setting up the foundational data architecture. Create the global entities and user-scoped entities following Third Normal Form (3NF) to prevent multi-user data conflicts.
+
+Task 1: Global Entities
+- Deck: id, title, description, level, category, price_coins, image_url.
+- Word: id, deck_id (FK), word, phonetic, part_of_speech, definition, example_sentence. (NO user progress data here).
+
+Task 2: User-Scoped Entities
+- users_profile: xp, level, coins, streak.
+- user_word_progress: user_id, word_id, status ('new', 'learning', 'reviewing', 'mastered'), mastery (0-100), next_review_date, consecutive_correct. Ensure UNIQUE(user_id, word_id).
+- user_study_alarms: user_id, alarm_time (TIME format), days (Array), is_active.
+- user_unlocked_decks: user_id, deck_id.
+
+Task 3: Apply Row Level Security (RLS)
+Ensure users can only SELECT/UPDATE their own records in user_word_progress and user_study_alarms using auth.uid().

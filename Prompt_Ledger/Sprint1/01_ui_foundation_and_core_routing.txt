@@ -1,0 +1,14 @@
+[SYSTEM PROMPT: UI FOUNDATION & ROUTING]
+Context: I am uploading a set of design screens (UI Blueprint) for a language learning application.
+CRITICAL INSTRUCTION: DECOUPLE CONTENT FROM UI. Treat the attached images purely as a UI/UX Blueprint. Ignore all text related to Japanese/Kanji. I am building a High-end English Learning App.
+
+RE-MAPPING RULES:
+- "Kanji N4/N5" -> "English Proficiency Level (A1-C2, IELTS, TOEIC)"
+- "Mnemonic/Kanji Details" -> "Vocabulary/Phonetics/Example Sentences"
+- "JLPT Roadmap" -> "Personalized Learning Path"
+
+CORE FEATURES TO BUILD:
+1. Bottom Navigation: Home | Quests | Store | Profile.
+2. Home Dashboard: Personal greeting, XP/Level badge, Daily Goal progress, "Continue Learning" widget, and Recommended Decks.
+3. Design System: Ultra-dark background (#0A0B1A), card backgrounds (#151630), purple accents (#8B5CF6), clean typography with Inter font, mobile-first responsiveness.
+4. Onboarding Flow (3 Steps): Goal setting (IELTS/Communication), Schedule selection (Morning/Night), and initial deck selection.

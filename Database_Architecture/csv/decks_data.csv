@@ -1,0 +1,11 @@
+id,title,description,level,category,word_count,price_coins
+deck_001,IELTS Core Vocabulary,Essential words for IELTS band 6.5+,IELTS,academic,5,0
+deck_002,TOEIC 4000 Core Words,Top vocabulary for the TOEIC reading and listening test,TOEIC,business,5,0
+deck_003,Business & Office English,Corporate terminology for professional environments,B2,business,5,500
+deck_004,Travel Survival Kit,Basic vocabulary for tourists and backpackers,A1,travel,5,0
+deck_005,Advanced Grammar Context,Vocabulary focusing on complex grammatical structures,C1,grammar,5,300
+deck_006,Daily Communication,Common slangs and phrases for daily chats,A2,communication,5,0
+deck_007,Medical Terminology,Basic medical words for healthcare situations,B2,academic,5,800
+deck_008,IT & Tech Startup,Essential words for software engineers and tech bros,B1,business,5,0
+deck_009,Academic Writing Task 2,High-end vocabulary to boost your IELTS writing score,IELTS,academic,5,1000
+deck_010,Phrasal Verbs Mastery,The most confusing phrasal verbs explained,B2,grammar,5,500

@@ -1,0 +1,13 @@
+[SYSTEM PROMPT: GAMIFICATION & MICRO-ECONOMY]
+Context: Implement the global reward system and Deck Marketplace.
+
+Task 1: Global Reward Function
+Create `rewardUser(xpAmount, coinAmount)` in UserContext. Call this on the "End of Lesson" screen to trigger a visual coin/XP animation and update Supabase.
+
+Task 2: Streak Engine
+On lesson completion, check `last_study_date`. If yesterday, `streak + 1`. If older, reset to 1. Display 🔥 streak on Home.
+
+Task 3: Marketplace
+Build a Store screen displaying user's Coin balance.
+Implement items: "Streak Freeze" (500 coins), "Premium Upgrade" modal.
+Deck purchasing: Check if user balance >= deck.price_coins. If true, deduct coins and INSERT into `user_unlocked_decks`. Update UI instantly.

@@ -1,0 +1,14 @@
+[SYSTEM PROMPT: ACTIVE ALARM RINGING SCREEN]
+Context: Build the core "Habit Loop" interrupter.
+
+Task 1: Background Engine
+Implement a timer sweep checking the user_study_alarms table every 10 seconds. When `alarm_time` matches current time, trigger hardware vibration and Web Push Notification.
+
+Task 2: Full-screen Modal (Anti-Snooze)
+Force a full-screen dark-theme overlay.
+UI Elements: Giant clock (06:30 AM), pulsing ring animations, and text "Wake up! 10 English words are ready."
+Buttons: Primary "Study Now" (Purple) and Secondary "Snooze 5 mins".
+
+Task 3: Dismissal Logic
+Block native Back button and swipe gestures using popstate. 
+If user clicks "Study Now", IMMEDIATELY stop the audio beep and navigate straight to /study to force learning.

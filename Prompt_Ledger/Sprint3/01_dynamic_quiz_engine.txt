@@ -1,0 +1,15 @@
+[SYSTEM PROMPT: DYNAMIC QUIZ ENGINE]
+Context: Build a flexible Quiz Engine in QuizScreen that supports 3 UI states based on the database `questionType`.
+
+State 1: Standard Multiple Choice
+- 15-second countdown timer. 1 large question, 4 vertical answer buttons.
+
+State 2: Fill-in-the-Blank
+- English sentence with a missing word (e.g., "He put a lot of ___ into the project."). 2x2 Answer Grid.
+- On correct answer: Slide up a BottomSheet showing "Correct!" with grammar explanation.
+
+State 3: Listening Quiz
+- Hide question text. Show a purple Audio Visualizer and Play button. Integrate Web Speech TTS.
+- 2x2 text answers, plus "Replay" and "Skip" buttons.
+
+Task: Link Quiz results to the SRS algorithm. Wrong answers trigger the "Forgetting Fallback" penalty (-40 mastery).
