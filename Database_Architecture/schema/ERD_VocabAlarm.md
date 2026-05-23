@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     USERS_PROFILE ||--o{ USER_WORD_PROGRESS : "has progress"
     USERS_PROFILE ||--o{ USER_UNLOCKED_DECKS : "unlocks"
